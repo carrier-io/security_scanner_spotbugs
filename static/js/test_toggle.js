@@ -8,14 +8,14 @@ const spotbugsIntegration = {
     computed: {
         body_data() {
             const {
-                description,
+                config,
                 is_default,
                 selected_integration: id,
                 save_intermediates_to,
                 scan_opts,
             } = this
             return {
-                description,
+                config,
                 is_default,
                 id,
                 save_intermediates_to,
@@ -61,6 +61,7 @@ const spotbugsIntegration = {
 
         initialState: () => ({
             // toggle: false,
+            config: {},
             error: {},
             save_intermediates_to: '/data/intermediates/sast',
             scan_opts: "",
