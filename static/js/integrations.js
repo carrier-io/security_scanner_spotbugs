@@ -78,7 +78,6 @@ const spotbugsIntegration = {
                 scan_opts,
 
                 status,
-                mode,
             } = this
             return {
                 config,
@@ -89,7 +88,6 @@ const spotbugsIntegration = {
                 scan_opts,
 
                 status,
-                mode,
             }
         },
         modal() {
