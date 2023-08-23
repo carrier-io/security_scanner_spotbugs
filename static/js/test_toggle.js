@@ -11,14 +11,14 @@ const spotbugsIntegration = {
                 config,
                 is_default,
                 selected_integration: id,
-                save_intermediates_to,
+                // save_intermediates_to,
                 scan_opts,
             } = this
             return {
                 config,
                 is_default,
                 id,
-                save_intermediates_to,
+                // save_intermediates_to,
                 scan_opts,
             }
         },
@@ -63,7 +63,7 @@ const spotbugsIntegration = {
             // toggle: false,
             config: {},
             error: {},
-            save_intermediates_to: '/data/intermediates/sast',
+            // save_intermediates_to: '/data/intermediates/sast',
             scan_opts: "",
         })
     },
@@ -79,7 +79,7 @@ const spotbugsIntegration = {
             </div>
             <div class="form-group">
                 <form autocomplete="off">
-                    <h9>Save intermediates to</h9>
+                    <!--<h9>Save intermediates to</h9>
                     <p>
                         <h13>Optional</h13>
                     </p>
@@ -87,7 +87,7 @@ const spotbugsIntegration = {
                         placeholder=""
                         v-model="save_intermediates_to"
                         :class="{ 'is-invalid': error.save_intermediates_to }">
-                    <div class="invalid-feedback">[[ error.save_intermediates_to ]]</div>
+                    <div class="invalid-feedback">[[ error.save_intermediates_to ]]</div>-->
 
                     <h9>Additional options</h9>
                     <p>
@@ -106,4 +106,3 @@ const spotbugsIntegration = {
 
 
 register_component('scanner-spotbugs', spotbugsIntegration)
-

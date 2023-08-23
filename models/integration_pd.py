@@ -5,7 +5,7 @@ from pydantic import BaseModel, validator
 
 class IntegrationModel(BaseModel):
     scan_opts: Optional[str]
-    save_intermediates_to: Optional[str] = '/data/intermediates/sast'
+    # save_intermediates_to: Optional[str] = '/data/intermediates/sast'
 
     def check_connection(self) -> bool:
         try:
@@ -13,5 +13,3 @@ class IntegrationModel(BaseModel):
         except Exception as e:
             log.exception(e)
             return False
-    
-
